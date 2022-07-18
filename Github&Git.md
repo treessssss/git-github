@@ -140,7 +140,7 @@ git pull # 将云端的数据同步到本地
   - 将想提交的文件添加到分支中（add和commit)
   - 上传分支`git push origin master:分支名称`
 - 如何提交pr(pull requests)
-  - ssh git clone项目
+  - 下载项目`git clone 该项目ssh网址`
   - 在项目中创建分支，在分支中修改代码
   - 提交修改的文件(status查看，add,commit上传)
   - 提交到远程GitHub上，命令`git push --set-upstream origin 分支名称`
