@@ -120,3 +120,37 @@ git pull # 将云端的数据同步到本地
 - Git merge 分支名 --------合并分支
 - Git branch -d 分支名--------删除分支
 
+
+
+# Github上传
+
+- 在github中创建repository仓库
+  - 个人主页的setting的repository
+  - new
+- 创建本地仓库
+  - 新建文件夹,输入命令行git init
+  - 将想提交的文件添加到仓库中（add和commit)
+
+- 关联远程仓库，输入命令`git remote add origin 网址(github上新建仓库的ssh网址)`
+
+- 上传本地代码，输入命令`git push -u origin 新建的文件名称`
+- 添加分支
+  - 创建分支`git branch 分支名称`
+  - 切换分支`git checkout 分支名称`
+  - 将想提交的文件添加到分支中（add和commit)
+  - 上传分支`git push origin master:分支名称`
+- 如何提交pr(pull requests)
+  - ssh git clone项目
+  - 在项目中创建分支，在分支中修改代码
+  - 提交修改的文件(status查看，add,commit上传)
+  - 提交到远程GitHub上，命令`git push --set-upstream origin 分支名称`
+  - 切换到主分支，将分支代码合并到主分支
+    - `git checkout master`
+    - `git merge 分支名称`
+    - `git add .`
+    - `git commit -m"名称“`
+    - `git push origin master`
+  - 提交pr申请
+    - 进入项目中，点击pull requests
+    - 点击create pull requests
+    - 提交到对应分支确认提交
