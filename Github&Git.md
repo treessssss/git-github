@@ -153,4 +153,4 @@ git pull # 将云端的数据同步到本地
   - 提交pr申请
     - 进入项目中，点击pull requests
     - 点击create pull requests
-    - 提交到对应分支确认提交
+    - 提交到对应分支确认提交.
